@@ -1,0 +1,81 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inputs</title>
+    <link rel="stylesheet" href="/static/index.css" />
+</head>
+
+<body>
+    <form action="/prediction" method="POST">
+        <div class="inp">
+        <div class="inputs"><label for="mr">Marriage Rating:</label>
+            <input type="text" name="marriage_rating" id="mr" placeholder="Marriage Rating" />
+        </div>
+        <div class="inputs"><label for="ag">Age:</label>
+            <input type="text" name="age" id="ag" placeholder="Age" />
+        </div>
+        <div class="inputs"><label for="ym">Years Married:</label>
+            <input type="text" name="Years Married" id="ym" placeholder="Years Married" />
+        </div>
+        <div class="inputs"><label for="ch">Children:</label>
+            <input type="text" name="Children" id="ch" placeholder="Children" />
+        </div>
+    </div>
+    <div class="opt">
+        <div class="selects" id="rel"><label for="re">Religious:</label>
+            <select name="Religious" id="re">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="selects" id="edu"><label for="ed">Education :</label>
+            <select name="Education Level" id="ed">
+                <option value="Grade School">Grade School</option>
+                <option value="High School">High School</option>
+                <option value="Some College">Some College</option>
+                <option value="College Graduate">College Graduate</option>
+                <option value="Some Graduate School">Some Graduate School</option>
+                <option value="Advance Degree">Advance Degree</option>
+            </select>
+        </div>
+        <div class="selects"><label for="wo">Woman Occupation:</label>
+            <select name="Woman Occupation" id="wo">
+                <option value="Student">Student</option>
+                <option value="Farming/Semi-Skilled/Unskilled">
+                    Farming/SemiSkilled/UnSkilled
+                </option>
+                <option value="White Coller">White Coller</option>
+                <option value="Teacher/Nurse/Writer/Technician/Skilled">
+                    Teacher/Nurse/Writer/Technician/Skilled
+                </option>
+                <option value="Managerial/Business">Managerial/Business</option>
+                <option value="Professional with Advance Degree">
+                    Professional with Advance Degree
+                </option>
+            </select>
+        </div>
+
+        <div class="selects" id="hus"><label for="ho" >Husband Occupation:</label>
+            <select name="husband_occupation" id="ho">
+                <option value="Student">Student</option>
+                <option value="Farming/Semi-Skilled/Unskilled">Farming/SemiSkilled/UnSkilled</option>
+                <option value="White Coller">White Coller</option>
+                <option value="Teacher/Nurse/Writer/Technician/Skilled">Teacher/Nurse/Writer/Technician/Skilled</option>
+                <option value="Managerial/Business">Managerial/Business</option>
+                <option value="Professional with Advance Degree">Professional with Advance Degree</option>
+            </select>
+        </div>
+    </div>
+    <div class="sub">
+        <input type="submit" id="submit" value="Submit" />
+    </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+
+body {background: rgb(88, 131, 196);}
+
+form {display: grid;
+grid-template-areas: 'inp opt'
+                     'sub sub';
+                     grid-gap: 48px 200px;
+    }
+
+.inp{grid-area: inp;
+display: grid;
+justify-content: flex-end;
+grid-gap:8px}
+
+.opt{grid-area: opt;
+    display: grid;
+   grid-gap:8px;
+   margin-right: 70px;
+    }
+
+.sub{grid-area: sub;
+    display: grid;
+    margin: 0px 640px;
+    }
+
+ label {display: inline-block;
+    width:140px;}
+
+select {width: 120px;}
+
